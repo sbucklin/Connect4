@@ -5,7 +5,7 @@ const PLAYER2 = "yellow";
 function createBoard(board) {
   // Inject stylesheet.
   const linkElement = document.createElement("link");
-  linkElement.href = import.meta.url.replace(".js", ".css");
+  linkElement.href = import.meta.url.replace(".mjs", ".css");
   linkElement.rel = "stylesheet";
   document.head.append(linkElement);
   // Generate board.
